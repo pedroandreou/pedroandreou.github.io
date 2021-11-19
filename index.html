@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>PETROS ANDREOU</h1>
+								<p>A highly motivated, self-starter, looking for an opportunity to apply and expand his knowledge and skills</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Spartan Warrior - Desktop App</a></li>
+								<li><a href="#work">Drone</a></li>
+								<li><a href="#about">SMTP</a></li>
+								<li><a href="#contact">Spartan Warrior - Android App</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Spartan Warrior - Desktop App -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Overview</h2>
+								<p>The main idea of my game is based on Greek mythology; however, I have taken some artistic
+									freedom in changing the original story-line. As the original story goes, King Odysseus of Ithaca
+									was married to Penelope. At the end of the Trojan War, Odysseus started his journey back
+									home but was believed by many to have died en route. Penelope, however, knew it in her
+									heart that her husband was still alive.
+									Tradition at the time had it that should a king die, his wife was to remarry. However, as
+									Penelope did not believe her husband to be dead, she was holding off as long as possible. As
+									the story goes, Odysseus took ten years to make it back home, as he had upset Poseidon, the
+									god of the sea, by blinding his son.
+									In my story, I replaced Odysseus the king of Ithaca, with the Spartan King and warrior,
+									Leonidas. That is because Leonidas is a much more famous character, that has been popularized by Hollywood.
+									The game has got many sounds which catch the player’s attention and enhance user experience. </p>
+								
+								<span class="image main"><img src="images/desktopApp01.png" alt="" /></span>
+								
+								<h2 class="major">Project Goals</h2>
+								<p>The hero of my game is a Spartan warrior whose mission is to collect 11 black soups so that
+									the gate to the basement opens. For each soup that he collects, we can hear him eating, but
+									when collecting the last one, the ”This is Sparta” song will play.
+									In trying to collect all the soups, the warrior will find three hazards on his way, and if he
+									touches any of them, he will die with the game terminating. However, if he makes it to the
+									basement, he will find a key on a barrel. If he collects the key, the ”key sound” effect will
+									play, and the background music will change from Dragon Ball Z’s music to New Zealand’s
+									Haka. By having the keys in his possession, he will be able to open the door and get into the
+									ship to get on his way to the church (where Penelope is said to be marrying another)</p>
+							</article>
+
+						<!-- Drone Simulator -->
+							<article id="work">
+								<h2 class="major">Overview</h2>
+								<p>My console Drone simulator has been extended to GUI using JavaFX
+									library.
+									Through the application, the user must be able to interact with it by adding various types of
+									Drones, Obstacles, loading or saving an arena and be able to read the games’ information and
+									exit the game</p>
+								<span class="image main"><img src="images/droneSimulator01.png" alt="" /></span>
+								<h2 class="major">Gameplay</h2>
+								<p>ThanosDrone is the strongest drone, HulkDrone is weaker and SuperDrone the weakest.
+									In more details, the HulkDrone is the green one, ThanosDrone is the black and white one
+									and the Super drone is the blue one. There are 2 types of obstacles, the normal obstacle,
+									and the fire obstacle. The main difference between them is that the fire obstacle flies unlike
+									the normal obstacle which never changes position and stays static. In addition, both
+									obstacles can turn ThanosDrone into HulkDrone and destroy the SuperDrone. However,
+									HulkDrone cannot be destroyed by normal obstacle but rather just bounces on it and can
+									eliminate the fire obstacle</p>
+								<span class="image main"><img src="images/droneSimulator02.png" alt="" /></span>
+							</article>
+
+						<!-- SMTP -->
+							<article id="about">
+								<h2 class="major">Overview</h2>
+								<p>Simple Mail Transfer Protocol (SMTP) is an internet standard communication protocol for
+									electronic mail transmission 1 . It is used to send and receive emails between two parties. To
+									achieve this, Transmission Control Protocol (TCP) is used which allows user to establish a
+									TCP connection on local port 25 between SMTP client and server. This would allow the
+									client to send a series of commands, the server to reply with the corresponding responses and
+									then, store the email’s data message in a txt file representing the recipient’s email</p>
+								<span class="image main"><img src="images/smtp01.png" alt="" /></span>
+							</article>
+
+						<!-- Spartan Warrior - Android App -->
+							<article id="contact">
+								<h2 class="major">Overview</h2>
+								<p>The main idea of my game is based on Greek mythology. The hero of my game is a Spartan
+									warrior whose mission is to reach as many levels as his can. This can happen only by having
+									in his possession a key which will be used to open the door for reaching the next level. However,
+									the way to glory will not be that easy as hazards will appear through his way and if he touches
+									any of them, he will firstly lose health and then dies with the game terminating. For each
+									soup that he collects, we can hear him eating and the health increases. The game has got many
+									sounds and background music which catch the player’s attention and enhance user experience</p>
+								<h2 class="major">Introduction</h2>
+								<p>The game consists of four activities. The first one is the menu which has three options for the
+									user that can choose from. If the user chooses “Start”, then the game will start playing.
+									However, if he loses, then he will be asked to submit his credentials which will be stored in the
+									firebase along with his score and finally, he will be sent back to the main Menu. The option
+									“High score” of the Main menu only lets the user to see the high score and “Exit” option to
+									leave the game</p>
+								<span class="image main"><img src="images/androidApp01.png" alt="" /></span>
+								<h2 class="major">OOP design</h2>
+								<p>The gameObjectMgr class is basically the manager that controls all the gameObjects in the
+									game. The manager adds or removes gameObjects from the two pools and the json files’ load.
+									Therefore, that is why a new instance of this class is created in TheGame class every time that
+									the user is ready to go into the next level. Furthermore, the AbstractGameObject class is
+									extended by the GameObject class which has one more property as it can be collectable or not
+									so it can get dirty (modified). The Pawn class extends the GameObject class by having three
+									more properties (health, speed, isPlayer, canMove)</p>
+								<span class="image main"><img src="images/androidApp02.png" alt="" /></span>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
