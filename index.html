@@ -26,10 +26,11 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Spartan Warrior - Desktop App</a></li>
-								<li><a href="#work">Drone</a></li>
-								<li><a href="#about">SMTP</a></li>
-								<li><a href="#contact">Spartan Warrior - Android App</a></li>
+								<li><a href="#SpartanWariorDesktopApp">Spartan Warrior - Desktop App</a></li>
+								<li><a href="#DroneSimulator">Drone</a></li>
+								<li><a href="#SMTP">SMTP</a></li>
+								<li><a href="#SpartanWarriorAndroidApp">Spartan Warrior - Android App</a></li>
+								<li><a href="#ImageCompDecomp">Image Comp/Decomp</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -38,7 +39,7 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
+							<article id="SpartanWariorDesktopApp">
 								<h2 class="major">Overview  
 									<a href="https://github.com/pedroandreou/Spartan-Warrior-Desktop-App">
 										<i class="fa fa-github fa-2x"></i>
@@ -72,7 +73,7 @@
 							</article>
 
 						<!-- Drone Simulator -->
-							<article id="work">
+							<article id="DroneSimulator">
 								<h2 class="major">Overview
 									<a href="https://github.com/pedroandreou/DroneSimulator">
 										<i class="fa fa-github fa-2x"></i>
@@ -97,7 +98,7 @@
 							</article>
 
 						<!-- SMTP -->
-							<article id="about">
+							<article id="SMTP">
 								<h2 class="major">Overview
 									<a href="https://github.com/pedroandreou/SMTP-Client-Server-Sides">
 										<i class="fa fa-github fa-2x"></i>
@@ -113,7 +114,7 @@
 							</article>
 
 						<!-- Spartan Warrior - Android App -->
-							<article id="contact">
+							<article id="SpartanWarriorAndroidApp">
 								<h2 class="major">Overview
 									<a href="https://github.com/pedroandreou/Spartan-Warrior-Android-Game">
 										<i class="fa fa-github fa-2x"></i>
@@ -144,6 +145,36 @@
 									more properties (health, speed, isPlayer, canMove)</p>
 								<span class="image main"><img src="images/androidApp02.png" alt="" /></span>
 							</article>
+
+						<!-- MATLAB GUI for image compression/decompression -->
+						<article id="ImageCompDecomp">
+							<h2 class="major">Overview
+								<a href="https://github.com/pedroandreou/ImageCompDecomp">
+									<i class="fa fa-github fa-2x"></i>
+								 </a>
+							</h2>
+							<p>The program code is based on two image compression algorithms, DCT  and Huffman encoding using MATLAB programming langugage. 
+								This approach was decided after reading a research on the benefits of these algorithms. 
+								The DCT algorithm is Fourier-Transform based and is the most widely used algorithm for lossy compression. Most importantly, 
+								it is one of the most efficient if not the most efficient compression method which is why it was implemented in the program. 
+								Although RLE  seemed like a good choice over Huffman encoding, it is not as adaptable to multiple different types of input formats 
+								and as the initial goal was to provide the user with that flexibility, 
+								the focus was shifted to Huffman encoding and the research backed this claim. Last but not least, Huffman encoding provides a lossless type of data compression</p>
+							<span class="image main"><img src="images/img-comp-decomp.png" alt="" /></span>
+							<h2 class="major">File Structure</h2>
+							<p>The program consists of three m-files which are the script files that contain all the commands which will be executed. 
+								The main m-file ,“Dashboard.m”, contains the code for the graphical user interface(GUI) and it is accompanied 
+								by “Dashboard.fig” is the file the GUI will be displayed on.  In order to assist the readability of the program, 
+								individual files were created for compression, “comp.m”, and decompression, “decomp.m”. When “Save Image” is pressed,
+								 the program saves the image in PNG format</p>
+							<h2 class="major">Exceptions</h2>
+							<p>Ensuring that the users will have a good user experience means that the program should be prevented from throwing any exceptions/errors. 
+								For that to be achieved, the buttons “Load Image”, “Compress Image”, “Decompress Image”, and “Save Image” were added where appropriate in the “Compression” 
+								and “Decompression” sections of the GUI. It is important to note that if for example the user does not first load an image and immediately attempts 
+								to compress/decompress/save, an appropriate warning message will pop up and help the user understand what should be done first.
+								 The exception of the “Cancel” button being pressed in the Window Prompt while trying to load an image is also handled in the program.</p>
+							<span class="image main"><img src="images/img-comp-decomp-exception.png" alt="" /></span>
+						</article>
 
 						<!-- Elements -->
 							<article id="elements">
