@@ -27,10 +27,11 @@
 						<nav>
 							<ul>
 								<li><a href="#SpartanWariorDesktopApp">Spartan Warrior - Desktop App</a></li>
-								<li><a href="#DroneSimulator">Drone</a></li>
 								<li><a href="#SMTP">SMTP</a></li>
+								<li><a href="#ImageCompDecomp">Comp/Decomp</a></li>
+								<li><a href="#DroneSimulator">Drone</a></li>
+								<li><a href="#DataAnalysisTweepy">Twitter API</a></li>
 								<li><a href="#SpartanWarriorAndroidApp">Spartan Warrior - Android App</a></li>
-								<li><a href="#ImageCompDecomp">Image Comp/Decomp</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -172,8 +173,28 @@
 								For that to be achieved, the buttons “Load Image”, “Compress Image”, “Decompress Image”, and “Save Image” were added where appropriate in the “Compression” 
 								and “Decompression” sections of the GUI. It is important to note that if for example the user does not first load an image and immediately attempts 
 								to compress/decompress/save, an appropriate warning message will pop up and help the user understand what should be done first.
-								 The exception of the “Cancel” button being pressed in the Window Prompt while trying to load an image is also handled in the program.</p>
+								 The exception of the “Cancel” button being pressed in the Window Prompt while trying to load an image is also handled in the program</p>
 							<span class="image main"><img src="images/img-comp-decomp-exception.png" alt="" /></span>
+						</article>
+						<!-- Data Analysis using Twitter API -->
+						<article id="DataAnalysisTweepy">
+							<h2 class="major">Extracting Twitter data
+								<a href="https://github.com/pedroandreou/DataAnalysisUsingTwitterApi">
+									<i class="fa fa-github fa-2x"></i>
+								 </a>
+							</h2>
+							<p>The first step to extracting data from Twitter is to apply for a developer account. 
+								Once the account is approved, we can generate the keys and tokens required to set up the connection. 
+								The connection to our Twitter App is set up using the OAuthHandler() class and its set_access_token() function. 
+								Then we call the Twitter API through the API() function. We also import the required libraries, such as tweepy, which is an open source Python package 
+								that gives us a convenient way to access the Twitter API. Tweepy includes a set of classes and methods that represent Twitter's models and API endpoints</p>
+								<span class="image main"><img src="images/extractingData.png" alt="" /></span>
+							<h2 class="major">Accomplished Tasks</h2>
+							<p>&rarr; Data Gathering and Pre-processing</p>
+							<p>&rarr; Exploratory Data Analysis (EDA)</p>
+							<p>&rarr; Network analysis</p>
+							<h2 class="major">Final Result</h2>
+								<span class="image main"><img src="images/final_network.png" alt="" /></span>
 						</article>
 
 						<!-- Elements -->
