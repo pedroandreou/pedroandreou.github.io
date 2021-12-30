@@ -10,6 +10,13 @@
 	</head>
 	<body class="is-preload">
 
+		<style>
+			 text-fill {
+        		font-size: 1.2em;
+        		-webkit-text-fill-color: #c6c91c;
+      		}
+		</style>
+
 		<!-- Wrapper - -->
 			<div id="wrapper">
 
@@ -155,7 +162,7 @@
 								 </a>
 							</h2>
 							<p>The program code is based on two image compression algorithms, DCT  and Huffman encoding using MATLAB programming langugage. 
-								This approach was decided after reading a research on the benefits of these algorithms. 
+								This approach was decided after conducting a research on the benefits of these algorithms. 
 								The DCT algorithm is Fourier-Transform based and is the most widely used algorithm for lossy compression. Most importantly, 
 								it is one of the most efficient if not the most efficient compression method which is why it was implemented in the program. 
 								Although RLE  seemed like a good choice over Huffman encoding, it is not as adaptable to multiple different types of input formats 
@@ -164,12 +171,12 @@
 							<span class="image main"><img src="images/img-comp-decomp.png" alt="" /></span>
 							<h2 class="major">File Structure</h2>
 							<p>The program consists of three m-files which are the script files that contain all the commands which will be executed. 
-								The main m-file ,“Dashboard.m”, contains the code for the graphical user interface(GUI) and it is accompanied 
-								by “Dashboard.fig” is the file the GUI will be displayed on.  In order to assist the readability of the program, 
+								The main m-file ,“Dashboard.m”, contains the code for the graphical user interface (GUI) and is accompanied 
+								by “Dashboard.fig” which is the file the GUI will be displayed on.  In order to assist the readability of the program, 
 								individual files were created for compression, “comp.m”, and decompression, “decomp.m”. When “Save Image” is pressed,
 								 the program saves the image in PNG format</p>
 							<h2 class="major">Exceptions</h2>
-							<p>Ensuring that the users will have a good user experience means that the program should be prevented from throwing any exceptions/errors. 
+							<p>Ensuring that the users will have a good experience means that the program should be prevented from throwing any exceptions/errors. 
 								For that to be achieved, the buttons “Load Image”, “Compress Image”, “Decompress Image”, and “Save Image” were added where appropriate in the “Compression” 
 								and “Decompression” sections of the GUI. It is important to note that if for example the user does not first load an image and immediately attempts 
 								to compress/decompress/save, an appropriate warning message will pop up and help the user understand what should be done first.
@@ -178,7 +185,7 @@
 						</article>
 						<!-- Data Analysis using Twitter API -->
 						<article id="DataAnalysisTweepy">
-							<h2 class="major">Extracting Twitter data
+							<h2 class="major">Data Analysis
 								<a href="https://github.com/pedroandreou/DataAnalysisUsingTwitterApi">
 									<i class="fa fa-github fa-2x"></i>
 								 </a>
@@ -190,10 +197,27 @@
 								that gives us a convenient way to access the Twitter API. Tweepy includes a set of classes and methods that represent Twitter's models and API endpoints</p>
 								<span class="image main"><img src="images/extractingData.png" alt="" /></span>
 							<h2 class="major">Accomplished Tasks</h2>
-							<p>&rarr; Data Gathering and Pre-processing</p>
-							<p>&rarr; Exploratory Data Analysis (EDA)</p>
-							<p>&rarr; Network analysis</p>
+							<p> &rarr; <text-fill> Data Gathering and Pre-processing: </text-fill><br></br>
+								Plotted a heatmap to show the frequency of missing and NaN values in our data frames, the amount of NaN or missing values that 
+								each column has in each of the 3 data frames, 
+								removed all the unnecessary data as well as re-ordered the columns of the data frames to be more readable and understandable
+							</p>
+							<p>&rarr; <text-fill> Exploratory Data Analysis (EDA): </text-fill><br></br>
+								What users/accounts are more mentioned, which are the favourite accounts
+								among the influencers/accounts selected, which twits have been retweeted the most, which are the most used hashtags and which of the 3 selected users is the most
+								successful considering number of followers, most liked tweets and most retweeted tweets using pie charts, bar charts and correlation plot
+							</p>
+							<p>&rarr; <text-fill> Network analysis: </text-fill><br></br>
+								Visualized a network for each user according to its following accounts and extracted some general information from each network
+								such as the number of nodes and edges. Also, as some properties
+								such as degrees of each node, max and min degree of all nodes and the average of degrees as well as
+								the shortest path, degree distribution, cluster coefficient, betweeness centrality and assortativity 
+							</p>
+							<br></br>
 							<h2 class="major">Final Result</h2>
+							<p>Each network shows the "friends" of the corresponding user. In other words, which accounts each user follows.  By combining all the three networks together, it can be noticed that 
+								none of them has any friends in common
+							</p>
 								<span class="image main"><img src="images/final_network.png" alt="" /></span>
 						</article>
 
